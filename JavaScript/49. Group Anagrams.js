@@ -15,9 +15,6 @@ var groupAnagrams = function(strs) {
             obj[sortedStr] = [str];
         }
     }
-    Object.entries(obj).forEach(([key, value]) => {
-        output.push(value)
-    });
 
-    return output;
+    return Object.values(obj);
 };
